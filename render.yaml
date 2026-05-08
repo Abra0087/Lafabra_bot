@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: lafabra-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: INSERISCI_QUI_IL_TUO_TOKEN
+      - key: CHANNEL_ID
+        value: @topofferte02
